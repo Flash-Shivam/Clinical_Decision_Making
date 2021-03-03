@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="64dp"
+    android:paddingBottom="64dp"
+    android:paddingLeft="64dp"
+    android:background="@drawable/ye"
+    android:paddingRight="64dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/an"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Information"
+        android:onClick="patient"/>
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/an"
+        android:text="Reading material(1)"
+        android:onClick="material1"
+
+        />
+
+    <Button
+        android:id="@+id/cn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bn"
+        android:text="Reading Material(2)"
+        android:onClick="material2"/>
+    <Button
+        android:id="@+id/dn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cn"
+        android:text="Reading material(3)"
+        android:onClick="material3"/>
+    <Button
+        android:id="@+id/en"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dn"
+        android:text="Periodontal Diagnosis" />
+    <Button
+        android:id="@+id/fn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/en"
+        android:text="Implant"
+        android:onClick="feedit"/>
+
+    <Button
+        android:id="@+id/gn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fn"
+        android:text="Send Queries" />
+
+    <Button
+        android:id="@+id/hn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gn"
+        android:text="Tell a friend" />
+
+    <Button
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hn"
+        android:text="Feedback" />
+
+
+</RelativeLayout>

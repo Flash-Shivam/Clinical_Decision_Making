@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/ye"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/ter1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/ter2"
+        android:layout_below="@id/ter1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/ter3"
+        android:layout_below="@id/ter2"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sex"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/ter5"
+        android:layout_below="@id/ter3"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupation"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ter5"
+        android:layout_marginTop="76dp"
+        android:text="IntraOral View"
+        android:onClick="get_view"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b2"
+        android:layout_below="@id/b1"
+        android:text="XRAY Radiograph"
+        android:onClick="get_xray"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b3"
+        android:layout_below="@id/b2"
+        android:text="CBCT"
+        android:onClick="get_cbct"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b4"
+        android:layout_below="@id/b3"
+        android:text="Video"
+        />
+
+</RelativeLayout>

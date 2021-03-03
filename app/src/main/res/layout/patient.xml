@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/ye"
+    android:padding="20dp">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Patient"
+        android:id="@+id/Auto"
+        android:completionThreshold="1"
+        android:dropDownAnchor="@id/cn"
+        android:completionHint="Select Patient"
+        android:popupBackground="@color/colorAccent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cn"
+        android:layout_below="@id/Auto"
+        android:paddingBottom="20dp"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dn"
+        android:layout_below="@id/cn"
+        android:paddingBottom="20dp"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/en"
+        android:layout_below="@id/dn"
+        android:paddingBottom="20dp"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/en"
+        android:id="@+id/gn"
+        android:text="Get Details"
+        android:onClick="get_details"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gn"
+        android:id="@+id/hn"
+        android:text="Chief Complaint"
+        android:onClick="get_chief"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hn"
+        android:id="@+id/in"
+        android:text="History of Present illness"
+        android:onClick="get_history_pre"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in"
+        android:id="@+id/jn"
+        android:text="Past Dental History"
+        android:onClick="get_history_dental"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jn"
+        android:id="@+id/kn"
+        android:text="Past Medical History"
+        android:onClick="get_history_medical"
+
+        /><Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/kn"
+    android:id="@+id/ln"
+    android:text="Gingival status"
+    android:onClick="get_gingival_status"
+
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ln"
+        android:id="@+id/pn"
+        android:text="Submit My treatment plan"
+        android:onClick="get_plan"
+
+        />
+
+</RelativeLayout>

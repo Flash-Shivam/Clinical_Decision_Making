@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clinical_decision_making">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Clinical_Decision_Making">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Second"
+            android:label="Implant"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Patient"
+            android:label="Patient Info"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Details"
+            android:label="details"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Xray"
+            android:label="xray"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Chief"
+            android:label="chief"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".History_pre"
+            android:label="pre_history_illness"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Medical"
+            android:label="pre_history_medical"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Dental"
+            android:label="pre_history_dental"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".GIngival"
+            android:label="gingival_Status"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".VIew"
+            android:label="intraoral_view"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Cbct"
+            android:label="cbct"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Material3"
+            android:label="reading material3"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Plan"
+            android:label="treatment plan submit"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Material1"
+            android:label="reading material1"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".Material2"
+            android:label="reading material2"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>
