@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.widget.Button;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,8 +28,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.splashscreen);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+
+            public void run() {
+                // TODO Auto-generated method stub
+                finish();
+                Intent menu = new Intent(getBaseContext(), Front.class);
+                startActivity(menu);
+            }
+        }, 3000);
+
 
 
 
@@ -36,64 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void feedit(View view) {
 
-        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
-
-        Intent changescreen = new Intent(this,Second.class);
-
-        changescreen.putExtra("callAc","j");
-
-
-        startActivity(changescreen);
-    }
-
-    public void patient(View view) {
-
-        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
-
-        Intent changescreen = new Intent(this,Patient.class);
-
-        changescreen.putExtra("callAc","j");
-
-
-        startActivity(changescreen);
-    }
-
-    public void material3(View view) {
-
-        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
-
-        Intent changescreen = new Intent(this,Material3.class);
-
-        changescreen.putExtra("callAc","j");
-
-
-        startActivity(changescreen);
-    }
-
-    public void material1(View view) {
-
-        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
-
-        Intent changescreen = new Intent(this,Material1.class);
-
-        changescreen.putExtra("callAc","j");
-
-
-        startActivity(changescreen);
-    }
-
-    public void material2(View view) {
-
-        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
-
-        Intent changescreen = new Intent(this,Material2.class);
-
-        changescreen.putExtra("callAc","j");
-
-
-        startActivity(changescreen);
-    }
 
 }

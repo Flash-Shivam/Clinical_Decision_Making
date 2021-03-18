@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.chaquo.python'
 }
 
 android {
@@ -8,12 +9,34 @@ android {
 
     defaultConfig {
         applicationId "com.example.clinical_decision_making"
+
+        python{
+            pip {
+                install "pymongo[srv]"
+                install "dnspython"
+            }
+        }
+        sourceSets{
+            main{
+                python{
+                    srcDirs=["src/main/python"]
+                }
+            }
+        }
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+
+        python{
+            buildPython "/home/shivam/anaconda3/bin/python3"
+        }
     }
 
     buildTypes {
@@ -36,4 +59,5 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.android.volley:volley:1.2.0'
 }

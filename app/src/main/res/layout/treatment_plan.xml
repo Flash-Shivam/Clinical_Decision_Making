@@ -1,86 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@drawable/ye"
+    android:layout_marginTop="150dp"
     android:padding="20dp">
 
     <TextView
         android:id="@+id/ter1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My treatment plan for this patient"
+        android:text="Ideal Treatment plan"
         android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
+        android:textSize="30dp"
         />
 
-    <EditText
+    <TextView
         android:id="@+id/yar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ter1"
-        android:layout_marginTop="20dp"
-        android:hint="Emergency Phase"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
         />
 
-    <EditText
+    <TextView
         android:id="@+id/yar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/yar"
-        android:layout_marginTop="20dp"
-        android:hint="Phase I (Nonsurgical / Etiotropic phase)"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
         />
 
-    <EditText
+    <TextView
         android:id="@+id/yar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/yar2"
-        android:layout_marginTop="20dp"
-        android:hint="EVALUATION AFTER PHASE I"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
         />
 
-    <EditText
+    <TextView
         android:id="@+id/yar4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/yar3"
-        android:layout_marginTop="20dp"
-        android:hint="Phase II (Surgical phase)"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
         />
 
-    <EditText
+    <TextView
         android:id="@+id/yar5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/yar4"
-        android:layout_marginTop="20dp"
-        android:hint="Phase III (restorative phase)"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
         />
 
-    <EditText
+    <TextView
         android:id="@+id/yar6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/yar5"
-        android:layout_marginTop="20dp"
-        android:hint="PHASE IV (maintenance phase)"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+
         />
 
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/View2"
-        android:text="Submit"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/yar6"
-        android:onClick="treatment"
-        />
+
 
 
 </RelativeLayout>
+    </ScrollView>

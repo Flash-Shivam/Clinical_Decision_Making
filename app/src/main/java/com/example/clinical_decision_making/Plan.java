@@ -12,25 +12,55 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
+
 import java.util.Random;
 
 public class Plan extends Activity {
 
+    String ed = "";
 
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.feedback);
 
-        Intent activitthat = getIntent();
+        Intent activitythat = getIntent();
 
-        String prevacg = activitthat.getExtras().getString("callAct");
-
-        TextView v = (TextView) findViewById(R.id.ter1);
+        String prevac = activitythat.getExtras().getString("callAc");
 
 
+        ed = prevac.substring(1,2);
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+    public void treatment(View view) {
+
+        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
+
+
+        //AutoCompleteTextView ed = findViewById(R.id.Auto);
+
+
+
+            Intent changescreen = new Intent(this,Treatment.class);
+            changescreen.putExtra("callAc", ed);
+            startActivity(changescreen);
 
 
 
@@ -39,21 +69,6 @@ public class Plan extends Activity {
 
 
 
-    public void Cha(View view) {
-
-
-
-        EditText r = (EditText) findViewById(R.id.yar);
-        EditText s = (EditText) findViewById(R.id.yar2);
-        EditText t = (EditText) findViewById(R.id.yar3);
-        EditText v = (EditText) findViewById(R.id.yar4);
-        EditText w = (EditText) findViewById(R.id.yar5);
-        EditText w1 = (EditText) findViewById(R.id.yar6);
-
-        String send = r.getText().toString() + "@" + s.getText().toString() + "%" + t.getText().toString() + "#" + v.getText().toString() + "$" + w.getText().toString() + "*" + w1.getText().toString();
-
-
-    }
 
 
 
