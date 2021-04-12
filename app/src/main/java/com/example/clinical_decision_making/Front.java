@@ -101,4 +101,29 @@ public class Front extends Activity {
         startActivity(changescreen);
     }
 
+
+    public void feedbackit(View view) {
+
+        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
+
+        Intent changescreen = new Intent(this,Feedback2.class);
+
+        changescreen.putExtra("callAc","j");
+
+
+        startActivity(changescreen);
+    }
+
+    public void gallery(View view) {
+
+        // Toast.makeText(this, "Hi", Toast.LENGTH_SHORT).show();
+
+        Intent changescreen = new Intent(this,Gallery.class);
+
+        changescreen.putExtra("callAc","j");
+
+
+        startActivity(changescreen);
+    }
+
 }

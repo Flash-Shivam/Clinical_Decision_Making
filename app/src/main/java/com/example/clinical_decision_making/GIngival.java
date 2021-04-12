@@ -38,6 +38,8 @@ public class GIngival extends Activity{
         if(prevac.charAt(1) == '1')
         {
             TextView v = (TextView) findViewById(R.id.ter3);
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Localized");
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
             TextView v3 = (TextView) findViewById(R.id.t3);
@@ -61,7 +63,7 @@ public class GIngival extends Activity{
             v3.setText("Soft & edematous");
             v4.setText("Normal");
             v5.setText("Stippling Reduced ");
-            v6.setText("Apical to CEJ");
+            v6.setText("Apical to CEJ 16");
             v7.setText("Present");
             v12.setText("DIAGNOSIS-  Localized stage II periodontitis with 16");
             v13.setText("PROGNOSIS: Fair");
@@ -69,7 +71,8 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '2'){
-
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Generalized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -107,6 +110,8 @@ public class GIngival extends Activity{
         }
         else if(prevac.charAt(1) == '3')
         {
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Localized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -141,6 +146,9 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '4'){
+
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Generalized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -161,7 +169,7 @@ public class GIngival extends Activity{
             v9.setText("CLINICAL ATTACHMENT LEVEL :  Normal ");
             v10.setText("FURCATION INVOLVEMENT:  Absent");
             v11.setText("MOBILITY :-  Absent   ");
-            v1.setText("Pale pink");
+            v1.setText("Pigmented pink");
             v2.setText("Scalloped ");
             v3.setText("Firm and resilient");
             v4.setText("Normal");
@@ -175,7 +183,8 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '5'){
-
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Localized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -197,7 +206,7 @@ public class GIngival extends Activity{
             v10.setText("PERIODONTAL POCKETS: Generalized mild to moderate periodontal pocket and localized pseudo pockets seen in mandibular anterior region.");
             v11.setText("CLINICAL ATTACHMENT LEVEL:  Generalized 5-6 mm (average)");
             v1.setText("Pigmented pink");
-            v2.setText("Accentuated scalloped");
+            v2.setText("Accentuated ");
             v3.setText("Soft & edematous");
             v4.setText("Slightly Enlarged");
             v5.setText("Reduced ");
@@ -212,7 +221,8 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '6'){
-
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Localized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -233,7 +243,7 @@ public class GIngival extends Activity{
             v9.setText("SUPPURATION : Present");
             v10.setText("PERIODONTAL POCKET DEPTH: 5 mm");
             v11.setText("CLINICAL ATTACHMENT LEVEL :  3 mm CAL ");
-            v1.setText("Pigmented pink");
+            v1.setText("Pale pink");
             v2.setText("Accentuated");
             v3.setText("Firm & resilient");
             v4.setText("Normal");
@@ -249,7 +259,8 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '7'){
-
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Localized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -270,7 +281,7 @@ public class GIngival extends Activity{
             v9.setText("");
             v10.setText("SUPPURATION- Absent ");
             v11.setText("CLINICAL ATTACHMENT LEVEL :  6 mm CAL Present with 13");
-            v1.setText("Pigmented pink");
+            v1.setText("Pale pink");
             v2.setText("Accentuated");
             v3.setText("Firm & resilient");
             v4.setText("Normal");
@@ -284,7 +295,8 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '8'){
-
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Generalized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -306,7 +318,7 @@ public class GIngival extends Activity{
             v10.setText("PERIODONTAL POCKET- Not present");
             v11.setText("FRENAL ATTACHMENT – Mucosal Attachment");
             v1.setText("Reddish Pink");
-            v2.setText("Scalloped & col");
+            v2.setText("Scalloped ");
             v3.setText("Soft & oedematous");
             v4.setText("Enlarged");
             v5.setText("Stippling reduced");
@@ -320,7 +332,8 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '9'){
-
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Generalized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -357,7 +370,8 @@ public class GIngival extends Activity{
 
         }
         else if(prevac.charAt(1) == '0'){
-
+            TextView v100 = (TextView) findViewById(R.id.ter100);
+            v100.setText("Generalized");
             TextView v = (TextView) findViewById(R.id.ter3);
             TextView v1 = (TextView) findViewById(R.id.t1);
             TextView v2 = (TextView) findViewById(R.id.t2);
@@ -378,8 +392,8 @@ public class GIngival extends Activity{
             v9.setText("Midline Diestema- Present ");
             v10.setText("Periodontal Pockets: Absent");
             v11.setText("Clinical Attachment Level: Normal");
-            v1.setText("Generalized pale pink");
-            v2.setText("Generalized  Scalloped");
+            v1.setText("pale pink");
+            v2.setText("Scalloped");
             v3.setText("Firm and resilient ");
             v4.setText("Normal");
             v5.setText("Present");

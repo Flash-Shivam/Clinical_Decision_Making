@@ -47,25 +47,22 @@
         android:layout_below="@id/cn"
         android:text="Reading material(3)"
         android:onClick="material3"/>
+
     <Button
         android:id="@+id/en"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/dn"
-        android:text="Periodontal Diagnosis" />
-    <Button
-        android:id="@+id/fn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/en"
-        android:text="Implant"
-        android:onClick="feedit"/>
+        android:text="Gallery"
+        android:onClick="gallery"/>
+
+
 
     <Button
         android:id="@+id/gn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fn"
+        android:layout_below="@id/en"
         android:text="Send Queries" />
 
     <Button
@@ -80,7 +77,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/hn"
-        android:text="Feedback" />
+        android:text="Feedback"
+        android:onClick="feedbackit"/>
 
 
 </RelativeLayout>

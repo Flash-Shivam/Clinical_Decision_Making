@@ -66,7 +66,7 @@ public class Xray extends Activity {
         else if(prevac.equals("7"))
         {
             ImageView z = (ImageView) findViewById(R.id.ter4);
-            z.setImageResource(R.drawable.patient7_xray);
+            z.setImageResource(R.drawable.recession);
         }
         else if(prevac.equals("8"))
         {

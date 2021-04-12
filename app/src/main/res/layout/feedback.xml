@@ -7,79 +7,12 @@
     android:background="@drawable/ye"
     android:padding="20dp">
 
-    <TextView
-        android:id="@+id/ter1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My treatment plan for this patient"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20dp"
-        />
-
-    <EditText
-        android:id="@+id/yar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ter1"
-        android:layout_marginTop="20dp"
-        android:hint="Emergency Phase"
-        />
-
-    <EditText
-        android:id="@+id/yar2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/yar"
-        android:layout_marginTop="20dp"
-        android:hint="Phase I (Nonsurgical / Etiotropic phase)"
-        />
-
-    <EditText
-        android:id="@+id/yar3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/yar2"
-        android:layout_marginTop="20dp"
-        android:hint="EVALUATION AFTER PHASE I"
-        />
-
-    <EditText
-        android:id="@+id/yar4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/yar3"
-        android:layout_marginTop="20dp"
-        android:hint="Phase II (Surgical phase)"
-        />
-
-    <EditText
-        android:id="@+id/yar5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/yar4"
-        android:layout_marginTop="20dp"
-        android:hint="Phase III (restorative phase)"
-        />
-
-    <EditText
-        android:id="@+id/yar6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/yar5"
-        android:layout_marginTop="20dp"
-        android:hint="PHASE IV (maintenance phase)"
-        />
 
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/View2"
-        android:text="Submit"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/yar6"
-        android:onClick="treatment"
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         />
 
 

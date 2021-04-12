@@ -66,6 +66,7 @@
                 android:layout_margin="1dp"
                 android:background="#FFFFFF"
                 android:gravity="center"
+                android:id="@+id/ter100"
                 android:text=""
                 android:textSize="16dp"
                 android:textAppearance="?android:attr/textAppearanceLarge"
